@@ -38,11 +38,11 @@
     "last 5 versions"
   ],
   "dependencies": {
-    "json-server": "^1.0.0-alpha.23",
-    "gh-pages": "4.0.0"
+    "gh-pages": "^4.0.0",
+    "json-server": "^1.0.0-alpha.23"
   },
   "scripts": {
-    "build": "react-scripts gulp",
+    "build": "gulp",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }
