@@ -1,0 +1,19 @@
+.search-bar {
+  // width: 100%;
+  // background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.search-bar__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.search-bar__search-pannel {
+  // background-image: url('../../../build/img/01.jpg');
+  border: 1px solid black;
+  margin-right: 25px;
+}

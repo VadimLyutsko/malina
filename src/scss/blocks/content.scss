@@ -1,0 +1,22 @@
+.data {
+  // width: 100%;
+  // background-color: blueviolet;
+  margin-bottom: 30px;
+}
+
+.content__headlines {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.content__headline {
+  // background-color: ghostwhite;
+  width: calc((100% - 25px * 5) / 6);
+  color: #b5b7c0;
+}
+
+select {
+  text-align: center;
+  cursor: pointer;
+}
