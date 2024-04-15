@@ -36,19 +36,25 @@
     background-color: #f5f5f5;
     border-radius: 5px;
     font-size: 12px;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: rgba($color: #5932ea, $alpha: 0.25);
+    }
   }
+
   .active {
     background-color: #5932ea;
     color: white;
     border: none;
+
+    &:hover {
+      background-color: #5932ea;
+    }
   }
   button:not(:last-child, :first-child) {
     // margin: 0;
   }
-}
-
-.active {
-  background-color: lightblue;
 }
 
 .nextButton,
@@ -59,6 +65,10 @@
   background-color: #f5f5f5;
   border-radius: 5px;
   font-size: 12px;
+
+  &:hover {
+    background-color: rgba($color: #5932ea, $alpha: 0.25);
+  }
 }
 
 .nextButton {

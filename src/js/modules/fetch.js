@@ -1,37 +1,37 @@
 const fakeRes = [
   {
     id: '0',
-    name: 'c',
+    name: 'ColoName',
     company: 'Microsoft',
-    phone: '44444',
+    phone: '(625) 555-0118',
     email: 'jansse@awemicrosoft.com',
     country: 'United States',
-    status: 'Cctive',
+    status: 'Active',
   },
   {
     id: '1',
-    name: 'b',
+    name: 'BravoName',
     company: 'Microsoft',
-    phone: '11111',
-    email: 'janwwwe@microsoft.com',
+    phone: '(713) 555-0118',
+    email: 'any@awemicrosoft.com',
     country: 'United States',
-    status: 'BActive',
+    status: 'Inactive',
   },
   {
     id: '2',
-    name: 'a',
+    name: 'AlfaName',
     company: 'Microsoft',
-    phone: '33333',
-    email: 'wewejane@microsoft.com',
+    phone: '(326) 555-0118',
+    email: 'some@awemicrosoft.com',
     country: 'United States',
-    status: 'Aactive',
+    status: 'Inactive',
   },
   {
     id: '3',
     name: 'Jane Coopaweaer',
     company: 'Microsoft',
     phone: '(225) 555-0118',
-    email: 'jaaeane@microsoft.com',
+    email: 'else@awemicrosoft.com',
     country: 'United States',
     status: 'Active',
   },
@@ -40,15 +40,15 @@ const fakeRes = [
     name: 'Jane waeCooper',
     company: 'Microsoft',
     phone: '(225) 555-0118',
-    email: 'jaeaeane@microsoft.com',
+    email: 'jansse@awemicrosoft.com',
     country: 'United States',
-    status: 'Actiawewave',
+    status: 'Active',
   },
   {
     id: '5',
     name: 'Jane Cooper',
     company: 'Microsoft',
-    phone: '(225) 555-0118',
+    phone: '(222) 555-0118',
     email: 'jane@microsoft.com',
     country: 'United States',
     status: 'Active',
@@ -58,7 +58,7 @@ const fakeRes = [
     name: 'Jane Cooper',
     company: 'Microsoft',
     phone: '(225) 555-0118',
-    email: 'jane@microsoft.com',
+    email: 'jansse@awemicrosoft.com',
     country: 'United States',
     status: 'Active',
   },
@@ -66,8 +66,8 @@ const fakeRes = [
     id: '7',
     name: 'Jane Cooper',
     company: 'Microsoft',
-    phone: '(225) 555-0118',
-    email: 'jane@microsoft.com',
+    phone: '(175) 555-0118',
+    email: 'kirill@awemicrosoft.com',
     country: 'United States',
     status: 'Active',
   },
@@ -75,8 +75,8 @@ const fakeRes = [
     id: '8',
     name: 'Jane Cooper',
     company: 'Microsoft',
-    phone: '(225) 555-0118',
-    email: 'jane@microsoft.com',
+    phone: '(512) 555-0118',
+    email: 'jansse@awemicrosoft.com',
     country: 'United States',
     status: 'Active',
   },
@@ -87,25 +87,25 @@ const fakeRes = [
     phone: '(225) 555-0118',
     email: 'jane@microsoft.com',
     country: 'United States',
-    status: 'Active',
+    status: 'Inactive',
   },
   {
     id: '10',
     name: 'Jane Cooper',
     company: 'Microsoft',
     phone: '(225) 555-0118',
-    email: 'jane@microsoft.com',
+    email: 'jansse@awemicrosoft.com',
     country: 'United States',
     status: 'Active',
   },
   {
     id: '11',
     name: 'Jane Cooper',
-    company: '222222222222222222222',
+    company: 'Some',
     phone: '(225) 555-0118',
     email: 'jane@microsoft.com',
     country: 'United States',
-    status: 'Active',
+    status: 'Inactive',
   },
   {
     id: '12',
@@ -123,7 +123,7 @@ const fakeRes = [
     phone: '(225) 555-0118',
     email: 'jane@microsoft.com',
     country: 'United States',
-    status: 'Active',
+    status: 'Inactive',
   },
   {
     id: '14',
@@ -131,17 +131,17 @@ const fakeRes = [
     company: 'Microsoft',
     phone: '(225) 555-0118',
     email: 'jane@microsoft.com',
-    country: 'United States',
+    country: 'Atlantis',
     status: 'Active',
   },
   {
     id: '15',
     name: 'Jane Cooper',
-    company: 'Microsoft',
+    company: 'Any',
     phone: '(225) 555-0118',
     email: 'jane@microsoft.com',
     country: 'United States',
-    status: 'Active',
+    status: 'Inactive',
   },
   {
     id: '16',
@@ -155,17 +155,17 @@ const fakeRes = [
 ];
 
 const sendRequest = async (url) => {
-  // let res;
+  let res;
 
-  // try {
-  //   res = await (await fetch(url)).json();
-  // } catch (err) {
-  //   console.log(err);
-  // }
+  try {
+    res = await (await fetch(url)).json();
+  } catch (err) {
+    console.log(err);
+  }
 
-  // return res;
+  return res;
   // console.log(fakeRes);
-  return fakeRes;
+  // return fakeRes;
 };
 
 export default sendRequest;

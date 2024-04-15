@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <div class="container">
-        <div class="search-bar">
+        <div class="search-bar animate__animated animate__rubberBand">
     <div class="search-bar__title">Все покупатели</div>
     <div>
       <input 
@@ -26,7 +27,7 @@
       </select></div>
   </div>
   
- <div class="content">
+ <div class="content animate__animated animate__flash">
   <div class="content__headlines">
     <p class="content__headline">Имя</p>
     <p class="content__headline">Компания</p>
@@ -35,12 +36,9 @@
     <p class="content__headline">Страна</p>
     <p class="content__headline">Статус</p>
   </div>
-  <ul></ul>
+  <div id="data"></div>
 </div>
-
-      <div class="data" id="data"></div>
-
-      <div class="pagination-block">
+ <div class="pagination-block animate__animated animate__rubberBand data">
   <p class="pagination-block__description">
     Показаны данные с <span id="from"></span> по <span id="to"></span> из <span id="of">250</span> записей
   </p>
