@@ -5,16 +5,16 @@
 Спасибо за возможность, которую вы предоставили!
 
  Что необходимо сделать, чтобы протестить на своем ПК (по шагам для чайника (как я :) ):
-  1. git clone https://github.com/VadimLyutsko/malina.git;
-  2. npm i;
-  3. gulp;
+  1. git clone https://github.com/VadimLyutsko/malina.git
+  2. npm i
+  3. gulp
   4. Открыть http://localhost:8000
   Будет запущен проект на localhost:8000 (без запроса куда-либо, но с полной работоспособностью)
 
  Если тестим с запросом:
-  1. git clone https://github.com/VadimLyutsko/malina.git;
-  2. npm i;
-  3. gulp;
+  1. git clone https://github.com/VadimLyutsko/malina.git
+  2. npm i
+  3. gulp
   4. json-server -w db.json
   5. Раскомментировать строки 293 - 301 и закомментировать строку 302 в файле fetch.js
   6. Открыть http://localhost:8000
