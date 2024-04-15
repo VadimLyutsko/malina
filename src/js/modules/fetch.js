@@ -152,20 +152,154 @@ const fakeRes = [
     country: 'United States',
     status: 'Active',
   },
+  {
+    id: '17',
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '18',
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '19',
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '20',
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '21',
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '22',
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '23',
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '24',
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '25',
+    name: 'Anne Cooper',
+    company: 'Microsoft',
+    phone: '(215) 555-0118',
+    email: 'anne@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '26',
+    name: 'Anne Cooper',
+    company: 'Microsoft',
+    phone: '(215) 555-0118',
+    email: 'anne@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '27',
+    name: 'Anne Cooper',
+    company: 'Microsoft',
+    phone: '(215) 555-0118',
+    email: 'anne@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '28',
+    name: 'Anne Cooper',
+    company: 'Microsoft',
+    phone: '(215) 555-0118',
+    email: 'anne@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '29',
+    name: 'Anne Cooper',
+    company: 'Microsoft',
+    phone: '(215) 555-0118',
+    email: 'anne@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '30',
+    name: 'Anne Cooper',
+    company: 'Microsoft',
+    phone: '(215) 555-0118',
+    email: 'anne@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    id: '31',
+    name: 'Anne Cooper',
+    company: 'Microsoft',
+    phone: '(215) 555-0118',
+    email: 'anne@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
 ];
 
 const sendRequest = async (url) => {
-  let res;
+  // let res;
 
-  try {
-    res = await (await fetch(url)).json();
-  } catch (err) {
-    console.log(err);
-  }
+  // try {
+  //   res = await (await fetch(url)).json();
+  // } catch (err) {
+  //   console.log(err);
+  // }
 
-  return res;
-  // console.log(fakeRes);
-  // return fakeRes;
+  // return res;
+  return fakeRes;
 };
 
 export default sendRequest;

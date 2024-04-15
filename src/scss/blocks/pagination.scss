@@ -1,25 +1,13 @@
 .pagination-block {
-  // width: 100%;
-  background-color: #fff;
+  background-color: var(--white-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 
-// .pagination-block__description {
-//   font-size: 14px;
-//   font-weight: 600;
-//   color: #b5b7c0;
-// }
-
-// .pagination-block__search-pannel {
-//   border: 1px solid black;
-// }
-// //////////////////////
-
 .pagination {
-  // background-color: gold;
   display: flex;
 
   li,
@@ -32,8 +20,8 @@
     margin: 0 5px;
     width: 26px;
     height: 24px;
-    border: 1px solid #eeeeee;
-    background-color: #f5f5f5;
+    border: 1px solid var(--white-light-color);
+    background-color: var(--white-super-light-color);
     border-radius: 5px;
     font-size: 12px;
     transition: 0.5s;
@@ -44,16 +32,13 @@
   }
 
   .active {
-    background-color: #5932ea;
-    color: white;
+    background-color: var(--blue-color);
+    color: var(--white-color);
     border: none;
 
     &:hover {
-      background-color: #5932ea;
+      background-color: var(--blue-color);
     }
-  }
-  button:not(:last-child, :first-child) {
-    // margin: 0;
   }
 }
 
@@ -61,13 +46,13 @@
 .prevButton {
   width: 26px;
   height: 24px;
-  border: 1px solid #eeeeee;
-  background-color: #f5f5f5;
+  border: 1px solid var(--white-light-color);
+  background-color: var(--white-super-light-color);
   border-radius: 5px;
   font-size: 12px;
 
   &:hover {
-    background-color: rgba($color: #5932ea, $alpha: 0.25);
+    background-color: rgba($color: var(--blue-color), $alpha: 0.25);
   }
 }
 

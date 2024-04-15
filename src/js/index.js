@@ -4,8 +4,43 @@ const requestURL = 'http://localhost:3000/aboutUsData';
 
 let res = await sendRequest(requestURL); // получение данных по запросу
 
-const itemsPerPage = 5; // количество строк при пагинации
+let itemsPerPage = 5; // количество строк при пагинации
 let currentPage = 1; // и начальная страница
+
+// Сортируем полученные данные по пункту из select
+const items = document.getElementById('itemsPerPage');
+
+function showByQuantity() {
+  const itemsValue = items.value;
+
+  // сразу на месте
+  switch (itemsValue) {
+    case '2':
+      itemsPerPage = 2;
+      break;
+    case '3':
+      itemsPerPage = 3;
+      break;
+    case '4':
+      itemsPerPage = 4;
+      break;
+    case '5':
+      itemsPerPage = 5;
+      break;
+    case '10':
+      itemsPerPage = 10;
+      break;
+    default:
+      break;
+  }
+}
+
+items.addEventListener('change', function () {
+  showByQuantity();
+  updatePagination();
+});
+
+showByQuantity(); // Initial sort when page loads
 
 // Сортируем полученные данные по пункту из select
 const sortSelect = document.getElementById('sortSelect');
@@ -108,7 +143,7 @@ function displayData(startIndex, endIndex) {
          <a class="information-line__phone" href="tel:${res[i].email}">${res[i].phone}</a>
         <a class="information-line__email" href="mailto:${res[i].email}">${res[i].email}</a>
          <p class="information-line__country">${res[i].country}</p>
-        <p class="information-line__status"> <span class="${res[i].status === 'Active' ? 'Active' : 'Inactive'}">${res[i].status}</span></p>
+        <p class="information-line__status"> <span class="${res[i].status === 'Active' ? 'active' : 'inactive'}">${res[i].status}</span></p>
        </div>`;
     dataContainer.classList = 'animate__animated animate__flash';
     dataContainer.appendChild(itemElement);

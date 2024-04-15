@@ -1,16 +1,28 @@
   <div class="search-bar animate__animated animate__rubberBand">
     <div class="search-bar__title">Все покупатели</div>
-    <div>
-      <input 
-      id="searchInput"
-      class="search-bar__search-pannel" placeholder="Поиск"></input>
-      Sort by : <select id="sortSelect">
-        <option value="name">name</option>
-        <option value="phone">phone</option>
-        <option value="company">company</option>
-        <option value="email">email</option>
-        <option value="country">country</option>
-        <option value="status">status</option>
-      </select></div>
+
+    <div class="search-bar__show-pannel"><span> Show by :</span> 
+    <select id="itemsPerPage">
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+    </select></div>
+
+    <div class="search-bar__container">
+      <input id="searchInput" class="search-bar__search-pannel" placeholder="Поиск"></input>
+
+     <div class="search-bar__sort-pannel"><span> Sort by :</span> 
+      <select id="sortSelect">
+      <option value="name">name</option>
+      <option value="phone">phone</option>
+      <option value="company">company</option>
+      <option value="email">email</option>
+      <option value="country">country</option>
+      <option value="status">status</option>
+    </select>
+  </div>
+</div>
   </div>
   
